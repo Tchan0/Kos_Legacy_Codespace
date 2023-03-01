@@ -2,9 +2,9 @@
 FROM tchan0/dcchain:legacy as build
 
 # Installing prerequisites
-RUN apk add \
-         gcc \
-         libelf-dev
+#UN apk add \
+#        gcc \
+#        libelf-dev
 
 # Add Kos
 RUN git clone https://github.com/KallistiOS/KallistiOS.git /opt/toolchains/dc/kos \
