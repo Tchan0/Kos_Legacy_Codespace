@@ -1,5 +1,5 @@
 # Kos_Legacy_Codespace
-Simple repo to launch Kos with legacy toolchain in Codespaces 
+Simple repo to launch Kos with legacy toolchain in [Codespaces](https://www.youtube.com/watch?v=sYJ3CHtT6WM)
 
 To launch it from github, just click on the "<> Code" button, then "Codespaces" - "Create codespace on main".
 
