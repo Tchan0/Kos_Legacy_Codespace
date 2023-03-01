@@ -19,6 +19,22 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "source /opt/toolchains/dc/kos/environ.sh",
 
+	// Use 'postAttachCommand' to run each time a tool has successfully attached to the container
+	"postAttachCommand": {
+    	    "kos_and_co": [
+		    "git clone https://github.com/KallistiOS/KallistiOS.git /opt/toolchains/dc/kos",
+		    "&& cd /opt/toolchains/dc/kos",
+		    "&& cp ./doc/environ.sh.sample ./environ.sh",
+		    "&& source environ.sh",
+		    "&& make",
+		    "&& git clone https://github.com/sizious/dcload-ip.git /opt/toolchains/dc/dcloadip",
+		    "&& cd /opt/toolchains/dc/dcloadip",
+		    "&& source /opt/toolchains/dc/kos/environ.sh",
+		    "&& make",
+		    "&& make install"
+	    ]
+	},
+	
 	// Configure tool-specific properties.
 	"customizations": {
 	    "vscode": {
