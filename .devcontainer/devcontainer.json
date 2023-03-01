@@ -11,8 +11,7 @@
 	},
 
 	//"workspaceMount": "source=${localWorkspaceFolder}/sub-folder,target=/workspace,type=bind,consistency=cached", 
-	"workspaceMount": "source=${localWorkspaceFolder}/opt/toolchains/dc/kos/examples,target=/workspace,type=bind,consistency=cached", 
-	"workspaceFolder": "/workspace",
+	//"workspaceFolder": "/workspace",
 	
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
