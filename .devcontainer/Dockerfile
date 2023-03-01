@@ -1,11 +1,6 @@
 # Stage 1
 FROM tchan0/dcchain:legacy as build
 
-# Installing prerequisites
-#UN apk add \
-#        gcc \
-#        libelf-dev
-
 # Add Kos
 RUN git clone https://github.com/KallistiOS/KallistiOS.git /opt/toolchains/dc/kos \
     && cd /opt/toolchains/dc/kos \
@@ -13,11 +8,8 @@ RUN git clone https://github.com/KallistiOS/KallistiOS.git /opt/toolchains/dc/ko
     && source environ.sh \
     && make
 
-# Add Kos-ports
-#RUN git clone --recursive git://git.code.sf.net/p/cadcdev/kos-ports /opt/toolchains/dc/kos-ports
-#    source /opt/toolchains/dc/kos/environ.sh
-#    cd /opt/toolchains/dc/kos-ports/utils
-#    ./build-all.sh
+# Add Kos-ports, but don't compile, as it takes a couple of minutes
+RUN git clone --recursive git://git.code.sf.net/p/cadcdev/kos-ports /opt/toolchains/dc/kos-ports
     
 # Add dcloadip 
 RUN git clone https://github.com/sizious/dcload-ip.git /opt/toolchains/dc/dcloadip \
