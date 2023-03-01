@@ -22,14 +22,6 @@ To launch it from github, just click on the "<> Code" button, then "Codespaces" 
       * dc-tool-ip -t 1.2.3.4 -x hello.elf
       * (with 1.2.3.4 being the ip address of your BBA)
 
-
-# Tips:
-  * Helper commands to launch in the Terminal (inside your codespace: File-View-Terminal):
-    * To add the Kos examples to your VSCode workspace:
-      * code -a /opt/toolchains/dc/kos/examples
-
-  * When you have finished working with your codespace, click on the green "Code" button again, and on the 3 dots next to your codespace to stop your container from running. This will save you some free execution minutes (default idle timeout is 30 minutes, and you get [120 free core hours per month](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts)).
-
 # Tips:
   * Helper commands to launch in the Terminal (inside your codespace: File-View-Terminal):
     * To add the Kos examples to your VSCode workspace:
