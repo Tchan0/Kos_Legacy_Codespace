@@ -9,7 +9,7 @@ RUN git clone https://github.com/KallistiOS/KallistiOS.git /opt/toolchains/dc/ko
     && make
 
 # Add Kos-ports, but don't compile, as it takes a couple of minutes
-RUN git clone --recursive git://git.code.sf.net/p/cadcdev/kos-ports /opt/toolchains/dc/kos-ports
+RUN git clone --recursive https://github.com/KallistiOS/kos-ports.git /opt/toolchains/dc/kos-ports
     
 # Add dcloadip 
 RUN git clone https://github.com/sizious/dcload-ip.git /opt/toolchains/dc/dcloadip \
